@@ -29,7 +29,6 @@ body {
     padding: 8px; 
 }
 .menu a:hover {
-    font-weight: bold;
     color: #edc02d; 
 }
 @media (min-width: 600px) {
@@ -101,6 +100,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.clock {
+    font-size: 2rem;
+    color: #b39e7e;
 }
 
 .banner {
@@ -208,7 +212,7 @@ article h4 {
     text-align: center;
 }
 
-}
+
 .offers {
     color: #edc02d;
     background-image: url(../img/how-to-clean.jpeg);
