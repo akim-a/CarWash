@@ -304,11 +304,21 @@ article h4 {
 .gift p {
     color: #7c7b78;
 }
+.carousel3 {
+    max-width: 1100px;
+}
+.carousel3 div {
+    display: flex;
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+
 
 .contact {
     background-image: url(../img/nissan.jpeg);
     background-size: cover;
     background-position: absolute;
+    max-width: 1100px;
     min-height: 700px;
     display: grid;
     text-align: left;
@@ -318,6 +328,6 @@ article h4 {
     background-color: whitesmoke;
     display: block;
     max-width: 500px;
-    min-height: 455px;
+    min-height: 400px;
     padding: 30px;
 }

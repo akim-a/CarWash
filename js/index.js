@@ -7,10 +7,19 @@ setInterval(updateClock, 1000);
 
 {
     const images = [
-        'img/amg.jpg',
-        'img/auto-wash.jpg',
-        'img/car-detailing',
-        'img/car-wash-pro/jpeg'
+        'img-slide/amg.jpg',
+        'img-slide/auto-wash.jpg',
+        'img-slide/benz.jpg',
+        'img-slide/car-wash-pro.jpg',
+        'img-slide/carwash.jpg',
+        'img-slide/ceramic-pro.jpg',
+        'img-slide/detailing.jpg',
+        'img-slide/how-to-clean.jpg',
+        'img-slide/karcher.jpg',
+        'img-slide/lexus.jpg',
+        'img-slide/maxres.jpg',
+        'img-slide/oil-change.jpg',
+        'img-slide/polishing.png'        
     ]
 
     let currentIdx = 0;
