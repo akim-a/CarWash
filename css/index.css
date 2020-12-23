@@ -6,7 +6,7 @@
 }
 
 body {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
 }
@@ -64,11 +64,12 @@ body {
     cursor: pointer;
 }
 .button3 {
-    padding: 0.35em 1.2em;
-    border: 0.2em solid yellow;
+    padding: 0.7em 1.6em;
+    border: 0.15em solid #edc02d;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 16px;
-    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    color: #5a5959;
+    font-size: 1.1em;
     text-align: center;
     transition: color 0.7s;
     background-color: transparent;
@@ -135,12 +136,17 @@ body {
         grid-column-gap: 20px;
     }
     .contact {
-        display: grid;
+        display: flex;
         max-width: 1100px;
         max-height: 700px;
         grid-template-columns: 550px 550px;
         grid-template-rows: 300px 150px;
-        rid-column-gap: 30px;
+    }
+    .forma {
+        max-width: 600px;
+        max-height: 600px;
+        padding-left: 500px;
+
     }
 
 }
@@ -174,6 +180,17 @@ article h3 {
     color: #7c7b78;
     text-align: center;
 }
+#services {
+    font-size: 3em;
+    color: rgb(37, 37, 37);
+    padding-top: 20px;
+}
+#para {
+    color: #7c7b78;
+    max-width: 600px;
+    margin-left: 300px;
+    line-height: 2em;
+}
 .services-card {
     text-align: start;
 }
@@ -185,7 +202,6 @@ article h3 {
 }
 .services-list img {
     width: 100%;
-    display: ;
     margin: auto;
 }
 
@@ -235,7 +251,7 @@ article.pricing-card h4 {
 .offers {
     color: white;
     background-image: url(../img/how-to-clean.jpeg);
-    max-width: 1100px;
+    max-width: 1200px;
     max-height: auto;
     padding: 10px;
 }
@@ -270,7 +286,7 @@ article.pricing-card h4 {
 .think {
     background-color: #008cff;
     min-height: 250px;
-    max-width: 1100px;
+    max-width: 1200px;
     padding: 50px;
 }
 .think h2 {
@@ -377,7 +393,7 @@ article.pricing-card h4 {
 .forma {
     background-color: whitesmoke;
     display: block;
-    width: auto;
+    width: 700px;
     min-height: 455px;
     padding: 30px;
 }
@@ -388,9 +404,9 @@ article.pricing-card h4 {
 }
 
 
-
+/*carousel */
 .carousel3 {
-    max-width: 1100px;
+    max-width: 1200px;
 }
 .carousel3 div {
     display: flex;
@@ -400,5 +416,99 @@ article.pricing-card h4 {
 
 .feed .feedimg {
     width: 200px;
+    height: auto;
     border-radius: 50%;
+}
+
+/* new year countdown css style */
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.newyear {
+  background-image: url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+/* Add a dark overlay */
+.newyear::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.newyear * {
+  z-index: 1;
+}
+
+.newyear h1 {
+  font-size: 60px;
+  margin: -80px 0 40px;
+}
+
+.year {
+  font-size: 200px;
+  z-index: -1;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.countdown {
+  /* display: flex; */
+  display: none;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+@media (max-width: 500px) {
+  .newyear h1 {
+    font-size: 45px;
+  }
+
+  .newyear .time {
+    margin: 5px;
+  }
+
+  .newyear .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .newyear .time small {
+    font-size: 10px;
+  }
 }
