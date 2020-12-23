@@ -16,10 +16,7 @@ body {
     font-weight: bold;
     color: blue;
 }
-/*header nav p {
-    display: flex;
-    align-self: end;
-}*/
+
 .menu a {
     display: block;
     text-decoration: none;
@@ -31,91 +28,6 @@ body {
 .menu a:hover {
     color: #edc02d; 
 }
-@media (min-width: 600px) {
-    header nav {
-        display: flex;
-    }
-    header nav .menu {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    footer nav {
-        display: flex;
-    }
-    footer nav .menu {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .services-list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 20px;
-    }
-    .services-list img {
-        width: 250px;
-        height: auto;
-        margin: auto;
-    }
-    .pricing-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-    .offer-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
-    }
-    .club-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-    .gift-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-    }
-    .contact {
-        display: grid;
-        max-width: 1100px;
-        max-height: 700px;
-        grid-template-columns: 550px 550px;
-        grid-template-rows: 300px 150px;
-        rid-column-gap: 30px;
-    }
-
-}
-
-.banner {
-    background-image: url(../img/iguazu-unvisible.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.clock {
-    font-size: 2rem;
-    color: #b39e7e;
-}
-
-.banner {
-    text-align: center;
-    color: white;
-}
-
-.price {
-    background-color:#fafafae8;
-    padding: 10px;
-}
 
 .button {
     padding: 0.35em 1.2em;
@@ -126,6 +38,7 @@ body {
     text-align: center;
     transition: color 0.7s;
     background-color: #ffdd00;
+    height: 2rem;
 }
 
 .button:hover {
@@ -171,18 +84,116 @@ body {
 }
 
 
+@media (min-width: 767px) {
+    header nav {
+        display: flex;
+    }
+    header nav .menu {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    footer nav {
+        display: flex;
+    }
+    footer nav .menu {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+    }
+    .services-list img {
+        width: 250px;
+        height: auto;
+        margin: auto;
+    }
+    .pricing-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .offer-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+
+    }
+    .club-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .gift-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+    .contact {
+        display: grid;
+        max-width: 1100px;
+        max-height: 700px;
+        grid-template-columns: 550px 550px;
+        grid-template-rows: 300px 150px;
+        rid-column-gap: 30px;
+    }
+
+}
+
+.banner {
+    background-image: url(../img/iguazu-unvisible.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner {
+    text-align: center;
+    color: white;
+}
+.services-list {
+    margin: 6%;
+    text-size-adjust: auto;
+    
+}
+
 article h3 {
-    color: blue; 
+    color: #00a6ff; 
+}
+.serve {
+    display: block;
+    color: #7c7b78;
+    text-align: center;
 }
 .services-card {
     text-align: start;
 }
-
+.services-card p {
+    color: #6e6e6e;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 22pt;    
+}
 .services-list img {
     width: 100%;
-    display: flex;
+    display: ;
     margin: auto;
 }
+
+.price {
+    background-color:#fafafae8;
+    padding: 10px;
+}
+
 
 main {
     text-align: center;
@@ -193,50 +204,65 @@ main {
 #pricing {
     font-size: 40px; 
 }
-article h4 {
+article.pricing-card h4 {
     color: #0099ff;
     margin: 30px;
 }
 .pricing-card {
     background-color: white;
     border: 0.1em solid #FFFFFF;
+    border-top-color: #edc02d;
+    border-top-width: 5px;
     min-height: 350px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 10px;
 }
 .pricing-card p {
-    color: #7c7b78;
-    font-size: 0.8em;
+    color: #6e6e6e;
+    font-size: 1em;
     text-align: center;
+    line-height: 22pt;
+}
+.pricing-card a {
+    font-size: 1.4em;
+}
+.pricing-card h4 {
+    font-size: 1.5em;
 }
 
-
 .offers {
-    color: #edc02d;
+    color: white;
     background-image: url(../img/how-to-clean.jpeg);
     max-width: 1100px;
     max-height: auto;
     padding: 10px;
 }
 .offer-list { 
-    color: white; 
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgba(58, 58, 58, 0.53);
+    color: white;
 }
 .offer {
-    max-width: 260px;
+    max-width: 300px;
     max-height: auto;
+    margin: auto;
+    padding: 20px;  
 }
 .offer h5 {
     font-size: 1.3rem;
 }
 .offer p {
-    font-size: 0.9em;
-    color: rgb(238, 238, 238);
+    font-size: inherit;
+    color: #e1e1e1;
+    line-height: 22pt;
 }
 .offers h4 {
     font-size: 2rem;
@@ -261,27 +287,35 @@ article h4 {
     margin: 20px;
 }
 #clubs {
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #3a3a3a;
 }
 .club-list {
     text-align: center;
-    padding: 30px;
+    padding: 5px;
+    margin: auto;
 }
 .club {
-    min-block-size: 300px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.2);
-    border-radius: 4px;
-    text-indent: 1.5vmax;
-    padding: 20px;
+    background-color: white;
+    border: 0.1em solid #FFFFFF;
+    border-top-color: #edc02d;
+    border-top-width: 5px;
+    min-height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin: 10px;
 }
 .club p {
     color: #7c7b78
 }
 #deals {
     font-size: 2.8rem;
-    max-width: 800px;
     text-align: center;
-    padding-left: 100px;
+    min-width: 320px;
+    margin: 100px;
+    margin-bottom:-3px;
+    color: #3a3a3a;
 }
 #get {
     color: #7c7b78;
@@ -290,9 +324,15 @@ article h4 {
 }
 .gift {
     text-align: start;
-    padding: 50px;
+    background-color: white;
+    border: 0.1em solid #FFFFFF;
+    border-top-color: #edc02d;
+    border-top-width: 5px;
+    min-height: 350px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: auto;
 }
 .gift h3 {
     color: black
@@ -303,7 +343,52 @@ article h4 {
 }
 .gift p {
     color: #7c7b78;
+    line-height: 22pt;
 }
+
+.contact {
+    background-image: url(../img/nissan-dark.jpg);
+    background-size: cover;
+    background-position: absolute;
+    min-height: 700px;
+    display: block;
+    text-align: left;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.contact a {
+    font-weight: bold;
+}
+.contact h2, p, a, b {
+    color: white;
+}
+.map {
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    
+}
+.forma {
+    background-color: whitesmoke;
+    display: block;
+    width: auto;
+    min-height: 455px;
+    padding: 30px;
+}
+
+.copy-right  {
+    color: #808080;
+    padding: top 25px;
+}
+
+
+
 .carousel3 {
     max-width: 1100px;
 }
@@ -313,21 +398,7 @@ article h4 {
     padding-bottom: 90px;
 }
 
-
-.contact {
-    background-image: url(../img/nissan.jpeg);
-    background-size: cover;
-    background-position: absolute;
-    max-width: 1100px;
-    min-height: 700px;
-    display: grid;
-    text-align: left;
-    padding: 20px;
-}
-.forma {
-    background-color: whitesmoke;
-    display: block;
-    max-width: 500px;
-    min-height: 400px;
-    padding: 30px;
+.feed .feedimg {
+    width: 200px;
+    border-radius: 50%;
 }
