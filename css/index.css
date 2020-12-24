@@ -20,7 +20,6 @@ body {
 .menu a {
     display: block;
     text-decoration: none;
-    text-align: auto;
     color: var(--main-color);
     border: 1px solid transparent;
     padding: 8px; 
@@ -136,7 +135,7 @@ body {
         grid-column-gap: 20px;
     }
     .contact {
-        display: flex;
+        display: grid;
         max-width: 1100px;
         max-height: 700px;
         grid-template-columns: 550px 550px;
@@ -168,8 +167,6 @@ body {
 }
 .services-list {
     margin: 6%;
-    text-size-adjust: auto;
-    
 }
 
 article h3 {
@@ -252,7 +249,7 @@ article.pricing-card h4 {
     color: white;
     background-image: url(../img/how-to-clean.jpeg);
     max-width: 1200px;
-    max-height: auto;
+    max-height: 100%;
     padding: 10px;
 }
 .offer-list { 
@@ -268,7 +265,7 @@ article.pricing-card h4 {
 }
 .offer {
     max-width: 300px;
-    max-height: auto;
+    max-height: 100%;
     margin: auto;
     padding: 20px;  
 }
@@ -291,7 +288,6 @@ article.pricing-card h4 {
 }
 .think h2 {
     color: white;
-    font-style: bold;
     font-size: 3rem;
 }
 .think p {
@@ -367,7 +363,6 @@ article.pricing-card h4 {
     background-size: cover;
     background-position: absolute;
     min-height: 700px;
-    display: block;
     text-align: left;
     padding: 20px;
     margin: auto;
@@ -400,7 +395,7 @@ article.pricing-card h4 {
 
 .copy-right  {
     color: #808080;
-    padding: top 25px;
+    padding-top: 25px;
 }
 
 
@@ -420,95 +415,3 @@ article.pricing-card h4 {
     border-radius: 50%;
 }
 
-/* new year countdown css style */
-
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-.newyear {
-  background-image: url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 0px;
-}
-
-/* Add a dark overlay */
-.newyear::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.newyear * {
-  z-index: 1;
-}
-
-.newyear h1 {
-  font-size: 60px;
-  margin: -80px 0 40px;
-}
-
-.year {
-  font-size: 200px;
-  z-index: -1;
-  opacity: 0.2;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.countdown {
-  /* display: flex; */
-  display: none;
-  transform: scale(2);
-}
-
-.time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-}
-
-.time h2 {
-  margin: 0 0 5px;
-}
-
-@media (max-width: 500px) {
-  .newyear h1 {
-    font-size: 45px;
-  }
-
-  .newyear .time {
-    margin: 5px;
-  }
-
-  .newyear .time h2 {
-    font-size: 12px;
-    margin: 0;
-  }
-
-  .newyear .time small {
-    font-size: 10px;
-  }
-}
