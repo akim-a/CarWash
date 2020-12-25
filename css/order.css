@@ -1,0 +1,75 @@
+body {
+    background-color: #edc02d;
+    min-height: 700px;
+}
+
+
+
+.input-info div {
+        margin-bottom: 20px;
+    }
+    
+.input-info input {
+        border-width: 0;
+        background-color: #F2F3F4;
+        width: 400px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-family: monospace;
+        padding-left: 15px;
+    }
+
+.zakaz h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.623);
+        margin-top: 80px;
+    }    
+.zakaz p {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(68, 66, 66);
+        margin-bottom: 30px;
+    }
+    
+.zakaz {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-height: 500px;
+    }
+    
+.form-order button:hover {
+        background-color: var(--link-color);
+        transition-duration: 2s;
+    }
+main {
+    font-size: 1.2em;
+    justify-content: center;
+    justify-self: center;
+    margin: 10px;
+    margin-left: 30px;
+}
+.btn {
+    padding: 0.7em 1.6em;
+    border: 0.15em solid rgb(201, 147, 11);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 40px;
+    color: #5a5959;
+    font-size: 1.1em;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #17c5ff;
+    cursor: pointer;
+}

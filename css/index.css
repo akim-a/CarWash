@@ -3,6 +3,7 @@
 :root {
     font-family: 'Ubuntu', sans-serif;
     --main-color: black;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,12 @@ body {
     color: #edc02d; 
 }
 
+.clock {
+    font-size: xx-large;
+    color: rgba(255, 230, 0, 0.712);
+
+}
+
 .button {
     padding: 0.35em 1.2em;
     border: 0.1em  rgb(241, 239, 239);
@@ -49,18 +56,20 @@ body {
 
 .button2 {
     padding: 0.35em 1.2em;
-    border: 0.1em solid transparent;
+    border: 0.1em solid ;
     margin: 0 0.3em 0.3em 0;
+    margin-left: 150px;
     border-radius: 15px;
     color: rgba(255, 230, 0, 0.712);
     text-align: center;
     transition: color 0.7s;
     background-color: transparent;
+    width: 130px;
 }
 
 .button2:hover {
-    color: #00ff9d;
-    background-color: #FFFFFF;
+    color: black;
+    background-color: rgb(214, 255, 253);
     cursor: pointer;
 }
 .button3 {
@@ -85,7 +94,7 @@ body {
 }
 
 
-@media (min-width: 767px) {
+@media (min-width: 740px) {
     header nav {
         display: flex;
     }
@@ -107,10 +116,10 @@ body {
     .services-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 20px;
+        grid-column-gap: 18px;
     }
     .services-list img {
-        width: 250px;
+        width: 300px;
         height: auto;
         margin: auto;
     }
@@ -122,8 +131,7 @@ body {
     .offer-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
-
+        grid-gap: 20px;
     }
     .club-list {
         display: grid;
@@ -137,7 +145,7 @@ body {
     }
     .contact {
         display: grid;
-        max-width: 1100px;
+        max-width: 1200px;
         max-height: 700px;
         grid-template-columns: 550px 550px;
         grid-template-rows: 300px 150px;
@@ -148,14 +156,17 @@ body {
         padding-left: 500px;
 
     }
-
+    .carousel3 .img1, .img2, .img3, .img4 {
+    max-width: 470px;
+    max-height: 400px;
+    }
 }
 
 .banner {
-    background-image: url(../img/iguazu-unvisible.jpg);
+    background-image: url(../img/firari.gif);
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,7 +192,7 @@ article h3 {
 #services {
     font-size: 3em;
     color: rgb(37, 37, 37);
-    padding-top: 20px;
+    padding-top: 15px;
 }
 #para {
     color: #7c7b78;
@@ -191,16 +202,19 @@ article h3 {
 }
 .services-card {
     text-align: start;
+
 }
 .services-card p {
-    color: #6e6e6e;
+    color: #757474;
     text-decoration: none;
-    letter-spacing: 0;
-    line-height: 22pt;    
+    letter-spacing: 1px;
+    line-height: 20pt;
+    font-size: 0.9rem;
 }
 .services-list img {
     width: 100%;
     margin: auto;
+    border-radius: 6px;
 }
 
 .price {
@@ -250,7 +264,6 @@ article.pricing-card h4 {
     color: white;
     background-image: url(../img/how-to-clean.jpeg);
     max-width: 1200px;
-    max-height: 100%;
     padding: 10px;
 }
 .offer-list { 
@@ -335,6 +348,10 @@ article.pricing-card h4 {
     font-size: 1.2em;
     padding-bottom: 60px;
 }
+.gift-list {
+    margin-bottom: 30px ;
+}
+
 .gift {
     text-align: start;
     background-color: white;
@@ -345,7 +362,7 @@ article.pricing-card h4 {
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.1);
     padding: 30px;
-    margin: auto;
+    margin: 10px;
 }
 .gift h3 {
     color: black
@@ -363,12 +380,17 @@ article.pricing-card h4 {
     background-image: url(../img/nissan-dark.jpg);
     background-size: cover;
     background-position: absolute;
-    min-height: 700px;
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
     text-align: left;
     padding: 20px;
     margin: auto;
     margin-bottom: 20px;
 }
+
+
 .contact a {
     font-weight: bold;
 }
@@ -387,10 +409,9 @@ article.pricing-card h4 {
     
 }
 .forma {
-    background-color: whitesmoke;
-    display: block;
-    width: 700px;
-    min-height: 455px;
+    background-color: rgba(117, 116, 116, 0.637);
+    width: 500px;
+    min-height: 300px;
     padding: 30px;
 }
 
@@ -401,18 +422,100 @@ article.pricing-card h4 {
 
 
 /*carousel */
-.carousel3 {
-    max-width: 1200px;
+
+.carousel3 .img1, .img2, .img3, .img4  {
+    margin-right: 5px;
+    max-width: 470px;
+    max-height: 400px;
 }
-.carousel3 div {
-    display: flex;
-    padding-top: 75px;
-    padding-bottom: 90px;
+@media (max-width: 930px) {
+    .carousel3 .img2, .img3, .img4 {
+        display: none;
+        margin-right: 5px;
+    }
+}
+.carousel-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+.prev, .next {
+    margin: 20px 20px;
+    width: 110px;
+    height: 30px;
+    font-size: 12px;
+    border-width: 2px;
+    border-color: orange;
+    border-radius: 5px;
+}
+    
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 217, 0, 0.623);
+    transition-duration: 2s;
 }
 
+.feed {
+    margin: 30px;
+
+}
+.feed h4 {
+    font-size: xx-large;
+    color: rgb(36, 36, 36);
+}
+.feedback {
+    max-width: 600px;
+    margin: auto;
+}
 .feed .feedimg {
     width: 200px;
     height: auto;
     border-radius: 50%;
+    margin: 40px;
 }
+.feed p {
+    color: #7c7b78;
+    line-height: 22pt;
+    justify-items: center;
 
+}
+.input-info div {
+        margin-bottom: 20px;
+    }
+    
+.input-info input {
+        border-width: 0;
+        background-color: #F2F3F4;
+        width: 400px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-family: monospace;
+        padding-left: 15px;
+    }
+
+.zakaz h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.623);
+        margin-top: 80px;
+    }    
+.zakaz p {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(68, 66, 66);
+        margin-bottom: 30px;
+    }
+    
+.zakaz {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-height: 500px;
+    }
+
+
+ 

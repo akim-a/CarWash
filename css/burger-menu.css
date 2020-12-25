@@ -38,6 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-top: -5px;
 }
 .navigation{
   max-width: 600px;
@@ -106,4 +107,27 @@ a:hover{
 .nav-wrapper.active .nav-toogler::after {
   transform: rotate(-135deg);
   margin-top: 0;
+}
+
+
+
+
+.navbar {
+     padding: 10px 16px;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
