@@ -543,6 +543,8 @@ article.pricing-card h4 {
     width: 60px;
     height: 60px;
  }
-.social img {
-    color: goldenrod;
+
+.w-text-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
