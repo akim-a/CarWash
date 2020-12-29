@@ -5,21 +5,21 @@ function updateClock() {
 setInterval(updateClock, 1000);
 {
 
-//Carousel slideshow//
+//Carousel slide//
     const images = [
-        'img-slide/amg.jpg',
-        'img-slide/auto-wash.jpg',
-        'img-slide/benz.jpg',
-        'img-slide/car-wash-pro.jpg',
-        'img-slide/carwash.jpg',
-        'img-slide/ceramic-pro.jpg',
-        'img-slide/detailing.jpg',
-        'img-slide/how-to-clean.jpg',
-        'img-slide/karcher.jpg',
-        'img-slide/lexus.jpg',
-        'img-slide/maxres.jpg',
-        'img-slide/oil-change.jpg',
-        'img-slide/polishing.png'        
+        {src: 'img-slide/amg.jpg', alt: 'amg'},
+        {src: 'img-slide/auto-wash.jpg', alt: 'Auto Wash'},
+        {src: 'img-slide/benz.jpg', alt: 'Benz'},
+        {src: 'img-slide/car-wash-pro.jpg', alt: 'Wash Pro'},
+        {src: 'img-slide/carwash.jpg', alt: 'Car Washing'},
+        {src: 'img-slide/ceramic-pro.jpg', alt: 'Ceramic Pro'},
+        {src: 'img-slide/detailing.jpg', alt: 'Car Detailing'},
+        {src: 'img-slide/how-to-clean.jpg', alt: 'How Cleac'},
+        {src: 'img-slide/karcher.jpg',alt: 'Karsher'},
+        {src: 'img-slide/lexus.jpg',alt: 'Lexus'},
+        {src: 'img-slide/maxres.jpg', alt: 'Maxres'},
+        {src: 'img-slide/oil-change.jpg',alt: 'Oil Change'},
+        {src: 'img-slide/polishing.png', alt: 'Polishing'}        
     ]
 
        let currentIdx = 0;
@@ -33,10 +33,14 @@ setInterval(updateClock, 1000);
         const idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
         const idx4 = idx3 + 1 >= images.length ? 0 : idx3 + 1;
         // console.log(currentIdx, idx2, idx3, idx4);
-        imgElement1.src = images[currentIdx];
-        imgElement2.src = images[idx2];
-        imgElement3.src = images[idx3];
-        imgElement4.src = images[idx4];
+        imgElement1.src = images[currentIdx].src;
+        imgElement1.alt = images[currentIdx].alt;        
+        imgElement2.src = images[idx2].src;
+        imgElement2.alt = images[idx2].alt;
+        imgElement3.src = images[idx3].src;
+        imgElement3.alt = images[idx3].alt;
+        imgElement4.src = images[idx4].src;
+        imgElement4.alt = images[idx4].alt;
     }
 
     function showNext() {

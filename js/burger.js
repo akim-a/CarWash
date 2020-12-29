@@ -1,4 +1,4 @@
-let navWrapper = document.querySelector('.nav-wrapper'),
+const navWrapper = document.querySelector('.nav-wrapper'),
 navToogler =  document.querySelector('.nav-toogler')
 
 navToogler.addEventListener('click', function (event) {
@@ -7,17 +7,13 @@ navToogler.addEventListener('click', function (event) {
  
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.addEventListener('scroll') = function() {scroleHandler()};
 
-// Get the navbar
-var header = document.getElementById("myNavbar");
+const header = document.getElementById("topNavbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+const sticky = navbar.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function hideNavBar() {
   if (window.pageYOffset > sticky) {
     navbar.classList.add("sticky");
   } else {
