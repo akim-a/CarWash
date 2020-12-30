@@ -114,7 +114,7 @@ body {
 }
 
 .services-list {
-    margin: 6%;
+    margin: auto;
 }
 
 article h3 {
@@ -466,18 +466,19 @@ article.pricing-card h4 {
         align-items: center;
     }
     #para {
-    color: #7c7b78;
-    max-width: 600px;
-    margin-left: 300px;
-    line-height: 2em;
+        color: #7c7b78;
+        max-width: 600px;
+        margin-left: 300px;
+        line-height: 2em;
     }
     .services-list {
+        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 18px;
     }
     .services-list img {
-        width: 300px;
+        max-width: 300px;
         height: auto;
         margin: auto;
     }
